@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.arm.eclipse.build.config.baremetal.exe.debug.1056229230">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.arm.eclipse.build.config.baremetal.exe.debug.1056229230" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.arm.eclipse.builder.armcc.error" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="clean" description="" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;com.arm.eclipse.builder.armcc.error;org.eclipse.cdt.core.CWDLocator" id="com.arm.eclipse.build.config.baremetal.exe.debug.1056229230" name="Debug" parent="com.arm.eclipse.build.config.baremetal.exe.debug" postannouncebuildStep="" postbuildStep="" preannouncebuildStep="" prebuildStep="">
+					<folderInfo id="com.arm.eclipse.build.config.baremetal.exe.debug.1056229230." name="/" resourcePath="">
+						<toolChain id="com.arm.toolchain.baremetal.base.var.arm_compiler_5-5.6.4.538939052" name="Arm Compiler 5.06u4" superClass="com.arm.toolchain.baremetal.base.var.arm_compiler_5-5.6.4">
+							<option id="com.arm.toolchain.ac5.option.target.cpu_fpu.1617370501" superClass="com.arm.toolchain.ac5.option.target.cpu_fpu" useByScannerDiscovery="false" value="Cortex-R4.VFPv3_D16" valueType="string"/>
+							<option id="com.arm.toolchain.ac5.option.fppcs.1821158754" name="Floating-point PCS" superClass="com.arm.toolchain.ac5.option.fppcs" useByScannerDiscovery="false" value="com.arm.tool.c.compiler.option.fppcs.hard" valueType="enumerated"/>
+							<option id="com.arm.toolchain.ac5.option.inst.813850836" name="Instruction set" superClass="com.arm.toolchain.ac5.option.inst" useByScannerDiscovery="false" value="com.arm.tool.c.compiler.option.inst.arm" valueType="enumerated"/>
+							<option id="com.arm.toolchain.ac5.option.endian.2086053592" name="Byte order" superClass="com.arm.toolchain.ac5.option.endian" useByScannerDiscovery="false" value="com.arm.tool.c.compiler.option.endian.big" valueType="enumerated"/>
+							<option id="com.arm.toolchain.ac5.option.charsize.1182683612" name="Wide character size" superClass="com.arm.toolchain.ac5.option.charsize" useByScannerDiscovery="false" value="com.arm.tool.c.compiler.option.enum.16" valueType="enumerated"/>
+							<targetPlatform id="com.arm.toolchain.baremetal.base.var.arm_compiler_5-5.6.4.538939052.1444111766" name=""/>
+							<builder buildPath="${workspace_loc:/test_tms570}/Debug" id="com.arm.toolchain.baremetal.builder.438179213" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="com.arm.toolchain.baremetal.builder"/>
+							<tool id="com.arm.tool.c.compiler.base.var.arm_compiler_5-5.6.4.138853411" name="Arm C Compiler 5.6.4" superClass="com.arm.tool.c.compiler.base.var.arm_compiler_5-5.6.4">
+								<option id="com.arm.tool.c.compiler.option.targetcpu.1517950110" name="Target CPU (--cpu)" superClass="com.arm.tool.c.compiler.option.targetcpu" useByScannerDiscovery="true" value="Cortex-R4F" valueType="string"/>
+								<option id="com.arm.tool.c.compiler.option.fppcs.1441290653" name="Floating-point PCS (--apcs)" superClass="com.arm.tool.c.compiler.option.fppcs" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.option.fppcs.hard" valueType="enumerated"/>
+								<option id="com.arm.tool.c.compiler.option.inst.623050734" name="Instruction set" superClass="com.arm.tool.c.compiler.option.inst" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.option.inst.arm" valueType="enumerated"/>
+								<option id="com.arm.tool.c.compiler.option.endian.596689779" name="Byte order" superClass="com.arm.tool.c.compiler.option.endian" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.option.endian.big" valueType="enumerated"/>
+								<option id="com.arm.tool.c.compiler.option.charsize.415817966" name="Wide character size" superClass="com.arm.tool.c.compiler.option.charsize" useByScannerDiscovery="false" value="com.arm.tool.c.compiler.option.enum.16" valueType="enumerated"/>
+								<option id="com.arm.tool.c.compiler.option.inter.57176272" name="Interworking (--apcs=/interwork)" superClass="com.arm.tool.c.compiler.option.inter" useByScannerDiscovery="true"/>
+								<option id="com.arm.tool.c.compiler.option.unalign.171271696" name="Disable unaligned accesses (--no_unaligned_access)" superClass="com.arm.tool.c.compiler.option.unalign" useByScannerDiscovery="false"/>
+								<option id="com.arm.tool.c.compiler.option.useMicroLib.774495078" name="Use microlib (-D__MICROLIB)" superClass="com.arm.tool.c.compiler.option.useMicroLib" useByScannerDiscovery="false"/>
+								<option id="com.arm.tool.c.compiler.option.incpath.1356544437" name="Include path (-I)" superClass="com.arm.tool.c.compiler.option.incpath" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="../include"/>
+									<listOptionValue builtIn="false" value="../source"/>
+								</option>
+								<option id="com.arm.tool.c.compile.option.lang.1954533154" name="Source language mode" superClass="com.arm.tool.c.compile.option.lang" useByScannerDiscovery="true" value="com.arm.tool.c.compile.option.lang.c99" valueType="enumerated"/>
+								<option id="com.arm.tool.c.compiler.option.gnu.1053676498" name="Enable GNU extensions (--gnu)" superClass="com.arm.tool.c.compiler.option.gnu" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.arm.tool.c.compiler.option.optlevel.2028771386" name="Optimization level" superClass="com.arm.tool.c.compiler.option.optlevel" useByScannerDiscovery="true"/>
+								<option id="com.arm.tool.c.compiler.option.optfor.857274902" name="Optimize for" superClass="com.arm.tool.c.compiler.option.optfor" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.option.optfor.size" valueType="enumerated"/>
+								<option id="com.arm.tool.c.compiler.option.loopopt.1021810048" name="Loop Optimization (--loop_optimization_level)" superClass="com.arm.tool.c.compiler.option.loopopt" useByScannerDiscovery="false" value="com.arm.tool.c.compiler.option.loopopt.none" valueType="enumerated"/>
+								<option id="com.arm.tool.c.compiler.options.debug.format.78015766" name="Debug format" superClass="com.arm.tool.c.compiler.options.debug.format" useByScannerDiscovery="false" value="com.arm.tool.c.compiler.options.debug.format.dwarf3" valueType="enumerated"/>
+								<inputType id="com.arm.tool.c.compiler.input.1345587853" superClass="com.arm.tool.c.compiler.input"/>
+								<inputType id="com.arm.tool.cpp.compiler.input.666857287" superClass="com.arm.tool.cpp.compiler.input"/>
+							</tool>
+							<tool id="com.arm.tool.cpp.compiler.base.var.arm_compiler_5-5.6.4.684198061" name="Arm C++ Compiler 5.6.4" superClass="com.arm.tool.cpp.compiler.base.var.arm_compiler_5-5.6.4">
+								<option id="com.arm.tool.c.compiler.option.optlevel.881122246" name="Optimization level" superClass="com.arm.tool.c.compiler.option.optlevel"/>
+							</tool>
+							<tool id="com.arm.tool.assembler.base.var.arm_compiler_5-5.6.4.1955492087" name="Arm Assembler 5.6.4" superClass="com.arm.tool.assembler.base.var.arm_compiler_5-5.6.4">
+								<option id="com.arm.tool.assembler.option.target.enableToolSpecificSettings.2124190522" name="Enable tool specific settings" superClass="com.arm.tool.assembler.option.target.enableToolSpecificSettings" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+								<option id="com.arm.tool.assembler.option.cpu.1944568077" name="Target CPU (--cpu)" superClass="com.arm.tool.assembler.option.cpu" useByScannerDiscovery="true" value="Cortex-R4F" valueType="string"/>
+								<option id="com.arm.tool.assembler.option.fppcs.507492260" name="Floating-point PCS (--apcs)" superClass="com.arm.tool.assembler.option.fppcs" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.option.fppcs.hard" valueType="enumerated"/>
+								<option id="com.arm.tool.assembler.option.inst.1355521826" name="Instruction set" superClass="com.arm.tool.assembler.option.inst" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.option.inst.arm" valueType="enumerated"/>
+								<option id="com.arm.tool.assembler.option.endian.1103999070" name="Byte order" superClass="com.arm.tool.assembler.option.endian" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.option.endian.big" valueType="enumerated"/>
+								<option id="com.arm.tool.assembler.option.inter.108650686" name="Interworking (--apcs=/interwork)" superClass="com.arm.tool.assembler.option.inter" useByScannerDiscovery="true"/>
+								<option id="com.arm.tool.assembler.option.unalign.996019370" name="Disable unaligned accesses (--no_unaligned_access)" superClass="com.arm.tool.assembler.option.unalign" useByScannerDiscovery="false"/>
+								<option id="com.arm.tool.assembler.option.useMicroLib.652438854" name="Use microlib (--pd &quot;__MICROLIB SETA 1&quot;)" superClass="com.arm.tool.assembler.option.useMicroLib" useByScannerDiscovery="false"/>
+								<option id="com.arm.tool.assembler.option.preproc.2026193686" name="Preprocess input before assembling (--cpreproc)" superClass="com.arm.tool.assembler.option.preproc" useByScannerDiscovery="false"/>
+								<option id="com.arm.tool.assembler.option.debug.format.942929739" name="Debug format" superClass="com.arm.tool.assembler.option.debug.format" useByScannerDiscovery="false" value="com.arm.tool.c.compiler.options.debug.format.dwarf3" valueType="enumerated"/>
+								<option id="com.arm.tool.assembler.option.flags.891366587" name="Other flags" superClass="com.arm.tool.assembler.option.flags" useByScannerDiscovery="true"/>
+								<inputType id="com.arm.tool.assembler.input.1053363749" superClass="com.arm.tool.assembler.input"/>
+							</tool>
+							<tool id="com.arm.tool.c.linker.base.var.arm_compiler_5-5.6.4.999076656" name="Arm Linker 5.6.4" superClass="com.arm.tool.c.linker.base.var.arm_compiler_5-5.6.4">
+								<option id="com.arm.tool.c.linker.option.cpu.1840894014" name="Target CPU (--cpu)" superClass="com.arm.tool.c.linker.option.cpu" useByScannerDiscovery="true" value="Cortex-R4F" valueType="string"/>
+								<option id="com.arm.tool.c.linker.option.entry.2071181400" name="Image entry point (--entry)" superClass="com.arm.tool.c.linker.option.entry" useByScannerDiscovery="false" value="_c_int00" valueType="string"/>
+								<option id="com.arm.tool.c.linker.option.scatter.1173217442" name="Scatter file (--scatter)" superClass="com.arm.tool.c.linker.option.scatter" useByScannerDiscovery="false" value="/home/slee/repos/code/ns/aerosteering/lib/BSP/TMS570LS1227/source/sys_link.scat" valueType="string"/>
+								<option id="com.arm.tool.c.linker.option.useMicroLib.366090405" name="Use microlib" superClass="com.arm.tool.c.linker.option.useMicroLib" useByScannerDiscovery="false"/>
+								<option id="com.arm.tool.c.linker.option.imagemap.383282403" name="Generate image map (--map)" superClass="com.arm.tool.c.linker.option.imagemap" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.arm.tool.c.linker.option.elim.556041715" name="List unused sections that are eliminated (--info=unused)" superClass="com.arm.tool.c.linker.option.elim" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.arm.tool.c.linker.option.flags.723951540" name="Other flags" superClass="com.arm.tool.c.linker.option.flags" useByScannerDiscovery="true" valueType="stringList">
+									<listOptionValue builtIn="false" value="--be32"/>
+								</option>
+							</tool>
+							<tool id="com.arm.tool.librarian.base.var.arm_compiler_5-5.6.4.1550617098" name="Arm Librarian 5.6.4" superClass="com.arm.tool.librarian.base.var.arm_compiler_5-5.6.4"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="source/spi.c|source/sci.c|source/lin.c|source/i2c.c|source/etpwm.c|source/eqep.c|source/ecap.c|source/crc.c|source/dcc.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.arm.eclipse.build.config.baremetal.exe.release.348119227">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.arm.eclipse.build.config.baremetal.exe.release.348119227" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.arm.eclipse.builder.armcc.error" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="axf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="clean" description="" id="com.arm.eclipse.build.config.baremetal.exe.release.348119227" name="Release" parent="com.arm.eclipse.build.config.baremetal.exe.release">
+					<folderInfo id="com.arm.eclipse.build.config.baremetal.exe.release.348119227." name="/" resourcePath="">
+						<toolChain id="com.arm.toolchain.baremetal.exe.release.2094593177" name="Arm Compiler 5 (DS-5 built-in)" superClass="com.arm.toolchain.baremetal.exe.release">
+							<targetPlatform binaryParser="" id="com.arm.eclipse.build.config.baremetal.exe.release.348119227..377036" name=""/>
+							<builder buildPath="${workspace_loc:/test_tms570}/Release" id="com.arm.toolchain.baremetal.builder.126066121" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="com.arm.toolchain.baremetal.builder"/>
+							<tool id="com.arm.tool.c.compiler.baremetal.exe.release.1808749679" name="Arm C Compiler 5" superClass="com.arm.tool.c.compiler.baremetal.exe.release">
+								<option defaultValue="com.arm.tool.c.compiler.option.optlevel.high" id="com.arm.tool.c.compiler.baremetal.exe.release.base.option.opt.1841346101" name="Optimization level" superClass="com.arm.tool.c.compiler.baremetal.exe.release.base.option.opt" useByScannerDiscovery="true" valueType="enumerated"/>
+								<inputType id="com.arm.tool.c.compiler.input.1917606902" superClass="com.arm.tool.c.compiler.input"/>
+								<inputType id="com.arm.tool.cpp.compiler.input.563418275" superClass="com.arm.tool.cpp.compiler.input"/>
+							</tool>
+							<tool id="com.arm.tool.cpp.compiler.baremetal.exe.release.1363227739" name="Arm C++ Compiler 5" superClass="com.arm.tool.cpp.compiler.baremetal.exe.release">
+								<option defaultValue="com.arm.tool.c.compiler.option.optlevel.high" id="com.arm.tool.cpp.compiler.baremetal.exe.release.base.option.opt.139614491" name="Optimization level" superClass="com.arm.tool.cpp.compiler.baremetal.exe.release.base.option.opt" valueType="enumerated"/>
+							</tool>
+							<tool id="com.arm.tool.assembler.1845875561" name="Arm Assembler 5" superClass="com.arm.tool.assembler">
+								<inputType id="com.arm.tool.assembler.input.1828768331" superClass="com.arm.tool.assembler.input"/>
+							</tool>
+							<tool id="com.arm.tool.c.linker.2069375090" name="Arm Linker 5" superClass="com.arm.tool.c.linker"/>
+							<tool id="com.arm.tool.librarian.1100730276" name="Arm Librarian 5" superClass="com.arm.tool.librarian"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="source/spi.c|source/sci.c|source/lin.c|source/i2c.c|source/etpwm.c|source/eqep.c|source/ecap.c|source/crc.c|source/dcc.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="test_tms570.com.arm.eclipse.build.project.v6.exe.1759931576" name="Executable" projectType="com.arm.eclipse.build.project.v6.exe"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="com.arm.projectSettings" version="5.25"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/test_tms570"/>
+		</configuration>
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/test_tms570"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+</cproject>

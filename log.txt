@@ -1,0 +1,388 @@
+13:54:45 **** Incremental Build of configuration Debug for project aerosteering ****
+make all 
+Building target: aerosteering.axf
+Invoking: Arm Linker 5
+armlink --cpu=Cortex-R4F --entry=_c_int00 --scatter="/home/slee/repos/code/ns/aerosteering/lib/BSP/TMS570LS1227/source/sys_link.scat" --map --info=sizes --info=totals --be32 -o "aerosteering.axf"  ./lib/cortex-r4-cmsis-dsp-library/HelperFunc/Source/math_helper.o  ./lib/canopenemtas/colib/src/co_candebug.o ./lib/canopenemtas/colib/src/co_cobhandler.o ./lib/canopenemtas/colib/src/co_commtask.o ./lib/canopenemtas/colib/src/co_dynod.o ./lib/canopenemtas/colib/src/co_emcy.o ./lib/canopenemtas/colib/src/co_errctrl.o ./lib/canopenemtas/colib/src/co_event.o ./lib/canopenemtas/colib/src/co_led.o ./lib/canopenemtas/colib/src/co_lss.o ./lib/canopenemtas/colib/src/co_lssmaster.o ./lib/canopenemtas/colib/src/co_nmt.o ./lib/canopenemtas/colib/src/co_nmtmaster.o ./lib/canopenemtas/colib/src/co_nmtslave.o ./lib/canopenemtas/colib/src/co_odaccess.o ./lib/canopenemtas/colib/src/co_pdo.o ./lib/canopenemtas/colib/src/co_queue.o ./lib/canopenemtas/colib/src/co_sdoclient.o ./lib/canopenemtas/colib/src/co_sdoqueue.o ./lib/canopenemtas/colib/src/co_sdoserv.o ./lib/canopenemtas/colib/src/co_sleep.o ./lib/canopenemtas/colib/src/co_stackinit.o ./lib/canopenemtas/colib/src/co_store.o ./lib/canopenemtas/colib/src/co_sync.o ./lib/canopenemtas/colib/src/co_time.o ./lib/canopenemtas/colib/src/co_timer.o ./lib/canopenemtas/colib/src/co_user.o  ./lib/canopenemtas/codrv/TMS570LS1227-FREERTOS/codrv_canbittiming.o ./lib/canopenemtas/codrv/TMS570LS1227-FREERTOS/codrv_cpu_tms570.o ./lib/canopenemtas/codrv/TMS570LS1227-FREERTOS/codrv_dcan.o ./lib/canopenemtas/codrv/TMS570LS1227-FREERTOS/codrv_error.o  ./lib/as5x47p/BSP/TMS570LS1224/TMS570LS1224_AS5X47P_BSP.o ./lib/as5x47p/BSP/TMS570LS1224/logger.o  ./lib/as5x47p/as5x47p.o  ./lib/BSP/TMS570LS1227/source/adc.o ./lib/BSP/TMS570LS1227/source/can.o ./lib/BSP/TMS570LS1227/source/dabort.o ./lib/BSP/TMS570LS1227/source/esm.o ./lib/BSP/TMS570LS1227/source/gio.o ./lib/BSP/TMS570LS1227/source/het.o ./lib/BSP/TMS570LS1227/source/mibspi.o ./lib/BSP/TMS570LS1227/source/notification.o ./lib/BSP/TMS570LS1227/source/os_croutine.o ./lib/BSP/TMS570LS1227/source/os_event_groups.o ./lib/BSP/TMS570LS1227/source/os_heap.o ./lib/BSP/TMS570LS1227/source/os_list.o ./lib/BSP/TMS570LS1227/source/os_mpu_wrappers.o ./lib/BSP/TMS570LS1227/source/os_port.o ./lib/BSP/TMS570LS1227/source/os_portasm.o ./lib/BSP/TMS570LS1227/source/os_queue.o ./lib/BSP/TMS570LS1227/source/os_tasks.o ./lib/BSP/TMS570LS1227/source/os_timer.o ./lib/BSP/TMS570LS1227/source/pinmux.o ./lib/BSP/TMS570LS1227/source/sys_core.o ./lib/BSP/TMS570LS1227/source/sys_dma.o ./lib/BSP/TMS570LS1227/source/sys_intvecs.o ./lib/BSP/TMS570LS1227/source/sys_mpu.o ./lib/BSP/TMS570LS1227/source/sys_pcr.o ./lib/BSP/TMS570LS1227/source/sys_phantom.o ./lib/BSP/TMS570LS1227/source/sys_pmm.o ./lib/BSP/TMS570LS1227/source/sys_pmu.o ./lib/BSP/TMS570LS1227/source/sys_selftest.o ./lib/BSP/TMS570LS1227/source/sys_startup.o ./lib/BSP/TMS570LS1227/source/sys_vim.o ./lib/BSP/TMS570LS1227/source/system.o  ./app/canopen_util.o ./app/gen_objdict.o ./app/main.o ./app/nt_control.o ./app/nt_ipc.o ./app/xsteer_402.o   /mnt/disk1/repos/code/ns/aerosteering/lib/cortex-r4-cmsis-dsp-library/Lib/arm_math_Cortex_R4_bspf.lib
+Warning: L9931W: Your license for feature ulteval_armcompiler will expire in 11 days
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000020
+
+  Load Region FLASH (Base: 0x00000000, Size: 0x00018fb4, Max: 0x00140000, ABSOLUTE, COMPRESSED[0x00018970])
+
+    Execution Region VECTORS (Base: 0x00000000, Size: 0x00000020, Max: 0x00000020, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000020   Code   RO         1057    intvecs             sys_intvecs.o
+
+
+    Execution Region FLASH0 (Base: 0x00000020, Size: 0x000187b0, Max: 0x0013ffe0, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000020   0x0000022c   Code   RO         1129  * reset               sys_startup.o
+    0x0000024c   0x00000008   Code   RO         1504  * !!!main             c_2.b(__main.o)
+    0x00000254   0x00000034   Code   RO         1735    !!!scatter          c_2.b(__scatter.o)
+Finished: 0 information, 1 warning and 0 error messages.
+    0x00000288   0x0000005a   Code   RO         1733    !!dczerorl2         c_2.b(__dczerorl2.o)
+    0x000002e2   0x00000002   PAD
+    0x000002e4   0x0000001c   Code   RO         1737    !!handler_zi        c_2.b(__scatter_zi.o)
+    0x00000300   0x00000002   Code   RO         1613    .ARM.Collect$$libinit$$00000000  c_2.b(libinit.o)
+    0x00000302   0x00000004   Code   RO         1626    .ARM.Collect$$libinit$$00000001  c_2.b(libinit2.o)
+    0x00000306   0x00000000   Code   RO         1629    .ARM.Collect$$libinit$$00000004  c_2.b(libinit2.o)
+    0x00000306   0x00000000   Code   RO         1632    .ARM.Collect$$libinit$$0000000A  c_2.b(libinit2.o)
+    0x00000306   0x00000000   Code   RO         1634    .ARM.Collect$$libinit$$0000000C  c_2.b(libinit2.o)
+    0x00000306   0x00000000   Code   RO         1636    .ARM.Collect$$libinit$$0000000E  c_2.b(libinit2.o)
+    0x00000306   0x00000000   Code   RO         1639    .ARM.Collect$$libinit$$00000011  c_2.b(libinit2.o)
+    0x00000306   0x00000000   Code   RO         1641    .ARM.Collect$$libinit$$00000013  c_2.b(libinit2.o)
+    0x00000306   0x00000000   Code   RO         1643    .ARM.Collect$$libinit$$00000015  c_2.b(libinit2.o)
+    0x00000306   0x00000000   Code   RO         1645    .ARM.Collect$$libinit$$00000017  c_2.b(libinit2.o)
+    0x00000306   0x00000000   Code   RO         1647    .ARM.Collect$$libinit$$00000019  c_2.b(libinit2.o)
+    0x00000306   0x00000000   Code   RO         1649    .ARM.Collect$$libinit$$0000001B  c_2.b(libinit2.o)
+    0x00000306   0x00000000   Code   RO         1651    .ARM.Collect$$libinit$$0000001D  c_2.b(libinit2.o)
+    0x00000306   0x00000000   Code   RO         1653    .ARM.Collect$$libinit$$0000001F  c_2.b(libinit2.o)
+    0x00000306   0x00000000   Code   RO         1655    .ARM.Collect$$libinit$$00000021  c_2.b(libinit2.o)
+    0x00000306   0x00000000   Code   RO         1657    .ARM.Collect$$libinit$$00000023  c_2.b(libinit2.o)
+    0x00000306   0x00000000   Code   RO         1659    .ARM.Collect$$libinit$$00000025  c_2.b(libinit2.o)
+    0x00000306   0x00000000   Code   RO         1663    .ARM.Collect$$libinit$$0000002C  c_2.b(libinit2.o)
+    0x00000306   0x00000000   Code   RO         1665    .ARM.Collect$$libinit$$0000002E  c_2.b(libinit2.o)
+    0x00000306   0x00000000   Code   RO         1667    .ARM.Collect$$libinit$$00000030  c_2.b(libinit2.o)
+    0x00000306   0x00000000   Code   RO         1669    .ARM.Collect$$libinit$$00000032  c_2.b(libinit2.o)
+    0x00000306   0x00000002   Code   RO         1670    .ARM.Collect$$libinit$$00000033  c_2.b(libinit2.o)
+    0x00000308   0x00000002   Code   RO         1614    .ARM.Collect$$libshutdown$$00000000  c_2.b(libshutdown.o)
+    0x0000030a   0x00000000   Code   RO         1676    .ARM.Collect$$libshutdown$$00000002  c_2.b(libshutdown2.o)
+    0x0000030a   0x00000000   Code   RO         1678    .ARM.Collect$$libshutdown$$00000004  c_2.b(libshutdown2.o)
+    0x0000030a   0x00000000   Code   RO         1681    .ARM.Collect$$libshutdown$$00000007  c_2.b(libshutdown2.o)
+    0x0000030a   0x00000000   Code   RO         1684    .ARM.Collect$$libshutdown$$0000000A  c_2.b(libshutdown2.o)
+    0x0000030a   0x00000000   Code   RO         1686    .ARM.Collect$$libshutdown$$0000000C  c_2.b(libshutdown2.o)
+    0x0000030a   0x00000000   Code   RO         1689    .ARM.Collect$$libshutdown$$0000000F  c_2.b(libshutdown2.o)
+    0x0000030a   0x00000002   Code   RO         1690    .ARM.Collect$$libshutdown$$00000010  c_2.b(libshutdown2.o)
+    0x0000030c   0x00000000   Code   RO         1518    .ARM.Collect$$rtentry$$00000000  c_2.b(__rtentry.o)
+    0x0000030c   0x00000000   Code   RO         1559    .ARM.Collect$$rtentry$$00000002  c_2.b(__rtentry2.o)
+    0x0000030c   0x00000004   Code   RO         1573    .ARM.Collect$$rtentry$$00000006  c_2.b(__rtentry6.o)
+    0x00000310   0x00000000   Code   RO         1561    .ARM.Collect$$rtentry$$00000009  c_2.b(__rtentry2.o)
+    0x00000310   0x00000004   Code   RO         1562    .ARM.Collect$$rtentry$$0000000A  c_2.b(__rtentry2.o)
+    0x00000314   0x00000000   Code   RO         1564    .ARM.Collect$$rtentry$$0000000C  c_2.b(__rtentry2.o)
+    0x00000314   0x00000008   Code   RO         1565    .ARM.Collect$$rtentry$$0000000D  c_2.b(__rtentry2.o)
+    0x0000031c   0x00000004   Code   RO         1574    .ARM.Collect$$rtentry$$00002717  c_2.b(__rtentry6.o)
+    0x00000320   0x00000002   Code   RO         1519    .ARM.Collect$$rtexit$$00000000  c_2.b(rtexit.o)
+    0x00000322   0x00000000   Code   RO         1579    .ARM.Collect$$rtexit$$00000002  c_2.b(rtexit2.o)
+    0x00000322   0x00000004   Code   RO         1580    .ARM.Collect$$rtexit$$00000003  c_2.b(rtexit2.o)
+    0x00000326   0x00000006   Code   RO         1581    .ARM.Collect$$rtexit$$00000004  c_2.b(rtexit2.o)
+    0x0000032c   0x00000454   Code   RO          876    .kernelTEXT         os_event_groups.o
+    0x00000780   0x000001e0   Code   RO          903    .kernelTEXT         os_heap.o
+    0x00000960   0x000001bc   Code   RO          950    .kernelTEXT         os_port.o
+    0x00000b1c   0x00000b24   Code   RO          974    .kernelTEXT         os_queue.o
+    0x00001640   0x00001c24   Code   RO          986    .kernelTEXT         os_tasks.o
+    0x00003264   0x00000754   Code   RO         1010    .kernelTEXT         os_timer.o
+    0x000039b8   0x000003e4   Code   RO           44    .text               co_cobhandler.o
+    0x00003d9c   0x0000038c   Code   RO           84    .text               co_commtask.o
+    0x00004128   0x00000600   Code   RO          153    .text               co_emcy.o
+    0x00004728   0x00000888   Code   RO          173    .text               co_errctrl.o
+    0x00004fb0   0x000000f8   Code   RO          188    .text               co_event.o
+    0x000050a8   0x00000494   Code   RO          223    .text               co_nmt.o
+    0x0000553c   0x000002d4   Code   RO          249    .text               co_nmtmaster.o
+    0x00005810   0x00002d2c   Code   RO          269    .text               co_odaccess.o
+    0x0000853c   0x000017f4   Code   RO          283    .text               co_pdo.o
+    0x00009d30   0x000007fc   Code   RO          298    .text               co_queue.o
+    0x0000a52c   0x00001088   Code   RO          313    .text               co_sdoclient.o
+    0x0000b5b4   0x000005b0   Code   RO          335    .text               co_sdoqueue.o
+    0x0000bb64   0x00000f0c   Code   RO          353    .text               co_sdoserv.o
+    0x0000ca70   0x00000070   Code   RO          384    .text               co_stackinit.o
+    0x0000cae0   0x00000008   Code   RO          426    .text               co_store.o
+    0x0000cae8   0x0000047c   Code   RO          438    .text               co_sync.o
+    0x0000cf64   0x00000354   Code   RO          453    .text               co_time.o
+    0x0000d2b8   0x000002e4   Code   RO          467    .text               co_timer.o
+    0x0000d59c   0x00000230   Code   RO          493    .text               codrv_cpu_tms570.o
+    0x0000d7cc   0x000003ec   Code   RO          605    .text               codrv_dcan.o
+    0x0000dbb8   0x0000018c   Code   RO          634    .text               codrv_error.o
+    0x0000dd44   0x00000118   Code   RO          655    .text               TMS570LS1224_AS5X47P_BSP.o
+    0x0000de5c   0x00000008   Code   RO          687    .text               logger.o
+    0x0000de64   0x00000834   Code   RO          699    .text               as5x47p.o
+    0x0000e698   0x00000544   Code   RO          724    .text               adc.o
+    0x0000ebdc   0x00000870   Code   RO          738    .text               can.o
+    0x0000f44c   0x000000e8   Code   RO          752    .text               dabort.o
+    0x0000f534   0x0000032c   Code   RO          756    .text               esm.o
+    0x0000f860   0x00000294   Code   RO          774    .text               gio.o
+    0x0000faf4   0x000005b8   Code   RO          786    .text               het.o
+    0x000100ac   0x0000062c   Code   RO          801    .text               mibspi.o
+    0x000106d8   0x0000002c   Code   RO          813    .text               notification.o
+    0x00010704   0x00000118   Code   RO          904    .text               os_heap.o
+    0x0001081c   0x00000100   Code   RO          923    .text               os_list.o
+    0x0001091c   0x00000904   Code   RO          938    .text               os_mpu_wrappers.o
+    0x00011220   0x00000100   Code   RO          951    .text               os_port.o
+    0x00011320   0x000000dc   Code   RO          987    .text               os_tasks.o
+    0x000113fc   0x000006cc   Code   RO         1024    .text               pinmux.o
+    0x00011ac8   0x00000344   Code   RO         1042    .text               sys_core.o
+    0x00011e0c   0x00000004   Code   RO         1081    .text               sys_phantom.o
+    0x00011e10   0x000000e0   Code   RO         1111    .text               sys_pmu.o
+    0x00011ef0   0x00001db0   Code   RO         1114    .text               sys_selftest.o
+    0x00013ca0   0x0000069c   Code   RO         1141    .text               sys_vim.o
+    0x0001433c   0x00000630   Code   RO         1155    .text               system.o
+    0x0001496c   0x000001c0   Code   RO         1167    .text               canopen_util.o
+    0x00014b2c   0x000002d8   Code   RO         1192    .text               gen_objdict.o
+    0x00014e04   0x00001018   Code   RO         1236    .text               main.o
+    0x00015e1c   0x00000494   Code   RO         1370    .text               nt_control.o
+    0x000162b0   0x0000078c   Code   RO         1388    .text               xsteer_402.o
+    0x00016a3c   0x000000d0   Code   RO         1406    .text               arm_math_Cortex_R4_bspf.lib(arm_sin_f32.o)
+    0x00016b0c   0x000000e0   Code   RO         1432    .text               arm_math_Cortex_R4_bspf.lib(arm_mean_f32.o)
+    0x00016bec   0x00000012   Code   RO         1446    .text               c_2.b(exit.o)
+    0x00016bfe   0x00000054   Code   RO         1448    .text               c_2.b(memcmp.o)
+    0x00016c52   0x0000003a   Code   RO         1450    .text               c_2.b(strlen.o)
+    0x00016c8c   0x00000088   Code   RO         1452    .text               c_2.b(rt_memcpy_v6.o)
+    0x00016d14   0x00000064   Code   RO         1454    .text               c_2.b(rt_memcpy_w.o)
+    0x00016d78   0x00000010   Code   RO         1456    .text               c_2.b(aeabi_memset.o)
+    0x00016d88   0x0000004e   Code   RO         1458    .text               c_2.b(rt_memclr_w.o)
+    0x00016dd6   0x00000044   Code   RO         1527    .text               c_2.b(rt_memclr.o)
+    0x00016e1a   0x00000002   PAD
+    0x00016e1c   0x0000000c   Code   RO         1595    .text               c_2.b(sys_exit.o)
+    0x00016e28   0x00000002   Code   RO         1615    .text               c_2.b(use_no_semi.o)
+    0x00016e2a   0x00000000   Code   RO         1617    .text               c_2.b(indicate_semi.o)
+    0x00016e2a   0x00000002   PAD
+    0x00016e2c   0x000004b0   Code   RO          971    kernelTEXT          os_portasm.o
+    0x000172dc   0x0000000a   Code   RO         1697    x$fpl$fpinit        fz_2v.b(fpinit.o)
+    0x000172e6   0x00000002   PAD
+    0x000172e8   0x00000008   Ven    RO         1461    x$sdiv              c_2.b(aeabi_sdiv_cr4_otime.o)
+    0x000172f0   0x00000006   Code   RO         1461    x$sdiv              c_2.b(aeabi_sdiv_cr4_otime.o)
+    0x000172f6   0x00000006   Code   RO         1463    x$udiv              c_2.b(aeabi_sdiv_cr4_otime.o)
+    0x000172fc   0x0000000c   Code   RO         1464    x$udivmod           c_2.b(aeabi_sdiv_cr4_otime.o)
+    0x00017308   0x00000040   Data   RO           46    .constdata          co_cobhandler.o
+    0x00017348   0x00000024   Data   RO           85    .constdata          co_commtask.o
+    0x0001736c   0x00000038   Data   RO          315    .constdata          co_sdoclient.o
+    0x000173a4   0x000000d0   Data   RO          355    .constdata          co_sdoserv.o
+    0x00017474   0x00000030   Data   RO          725    .constdata          adc.o
+    0x000174a4   0x00000020   Data   RO          739    .constdata          can.o
+    0x000174c4   0x00000020   Data   RO          787    .constdata          het.o
+    0x000174e4   0x00000200   Data   RO         1142    .constdata          sys_vim.o
+    0x000176e4   0x0000000f   Data   RO         1193    .constdata          gen_objdict.o
+    0x000176f3   0x00000001   PAD
+    0x000176f4   0x0000000c   Data   RO         1194    .constdata          gen_objdict.o
+    0x00017700   0x000000c4   Data   RO         1195    .constdata          gen_objdict.o
+    0x000177c4   0x00000001   Data   RO         1196    .constdata          gen_objdict.o
+    0x000177c5   0x00000001   PAD
+    0x000177c6   0x0000000a   Data   RO         1197    .constdata          gen_objdict.o
+    0x000177d0   0x00000004   Data   RO         1198    .constdata          gen_objdict.o
+    0x000177d4   0x00000004   Data   RO         1199    .constdata          gen_objdict.o
+    0x000177d8   0x00000004   Data   RO         1200    .constdata          gen_objdict.o
+    0x000177dc   0x0000000c   Data   RO         1201    .constdata          gen_objdict.o
+    0x000177e8   0x00000010   Data   RO         1202    .constdata          gen_objdict.o
+    0x000177f8   0x00000004   Data   RO         1203    .constdata          gen_objdict.o
+    0x000177fc   0x00000004   Data   RO         1204    .constdata          gen_objdict.o
+    0x00017800   0x0000000c   Data   RO         1205    .constdata          gen_objdict.o
+    0x0001780c   0x00000014   Data   RO         1206    .constdata          gen_objdict.o
+    0x00017820   0x00000af8   Data   RO         1207    .constdata          gen_objdict.o
+    0x00018318   0x0000006a   Data   RO         1371    .constdata          nt_control.o
+    0x00018382   0x00000002   PAD
+    0x00018384   0x0000000c   Data   RO         1390    .constdata          xsteer_402.o
+    0x00018390   0x0000040c   Data   RO         1407    .constdata          arm_math_Cortex_R4_bspf.lib(arm_sin_f32.o)
+    0x0001879c   0x00000014   Data   RO         1208    .conststring        gen_objdict.o
+    0x000187b0   0x00000020   Data   RO         1731    Region$$Table       anon$$obj.o
+
+
+    Execution Region ARM_LIB_STACKHEAP (Base: 0x08000000, Size: 0x00021400, Max: 0x00021400, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x08000000   0x00021400   Zero   RW            1    ARM_LIB_STACKHEAP.bss  anon$$obj.o
+
+
+    Execution Region RAM (Base: 0x08021400, Size: 0x0000dba0, Max: 0x0000ec00, ABSOLUTE, COMPRESSED[0x000001a0])
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x08021400   0x00000002   Data   RW           47    .data               co_cobhandler.o
+    0x08021402   0x00000002   PAD
+    0x08021404   0x00000010   Data   RW           86    .data               co_commtask.o
+    0x08021414   0x0000001c   Data   RW          154    .data               co_emcy.o
+    0x08021430   0x0000000c   Data   RW          175    .data               co_errctrl.o
+    0x0802143c   0x00000004   Data   RW          189    .data               co_event.o
+    0x08021440   0x00000010   Data   RW          224    .data               co_nmt.o
+    0x08021450   0x00000008   Data   RW          250    .data               co_nmtmaster.o
+    0x08021458   0x00000088   Data   RW          270    .data               co_odaccess.o
+    0x080214e0   0x0000001c   Data   RW          285    .data               co_pdo.o
+    0x080214fc   0x00000010   Data   RW          300    .data               co_queue.o
+    0x0802150c   0x00000014   Data   RW          316    .data               co_sdoclient.o
+    0x08021520   0x00000004   Data   RW          337    .data               co_sdoqueue.o
+    0x08021524   0x00000010   Data   RW          356    .data               co_sdoserv.o
+    0x08021534   0x00000018   Data   RW          440    .data               co_sync.o
+    0x0802154c   0x00000010   Data   RW          454    .data               co_time.o
+    0x0802155c   0x0000000c   Data   RW          468    .data               co_timer.o
+    0x08021568   0x0000000c   Data   RW          494    .data               codrv_cpu_tms570.o
+    0x08021574   0x00000008   Data   RW          606    .data               codrv_dcan.o
+    0x0802157c   0x00000006   Data   RW          635    .data               codrv_error.o
+    0x08021582   0x00000002   PAD
+    0x08021584   0x00000008   Data   RW          656    .data               TMS570LS1224_AS5X47P_BSP.o
+    0x0802158c   0x000003a0   Data   RW          788    .data               het.o
+    0x0802192c   0x00000004   Data   RW          952    .data               os_port.o
+    0x08021930   0x00000004   Data   RW          953    .data               os_port.o
+    0x08021934   0x00000001   Data   RW         1168    .data               canopen_util.o
+    0x08021935   0x00000002   Data   RW         1209    .data               gen_objdict.o
+    0x08021937   0x00000001   PAD
+    0x08021938   0x00000010   Data   RW         1210    .data               gen_objdict.o
+    0x08021948   0x00000024   Data   RW         1211    .data               gen_objdict.o
+    0x0802196c   0x00000004   Data   RW         1212    .data               gen_objdict.o
+    0x08021970   0x00000028   Data   RW         1239    .data               main.o
+    0x08021998   0x00000078   Data   RW         1240    .data               main.o
+    0x08021a10   0x00000018   Data   RW         1391    .data               xsteer_402.o
+    0x08021a28   0x00000168   Data   RW          988    .kernelBSS          os_tasks.o
+    0x08021b90   0x0000003c   Data   RW         1011    .kernelBSS          os_timer.o
+    0x08021bcc   0x00000018   Data   RW          905    .kernelHEAP         os_heap.o
+    0x08021be4   0x000004e0   Zero   RW           45    .bss                co_cobhandler.o
+    0x080220c4   0x00000040   Zero   RW          174    .bss                co_errctrl.o
+    0x08022104   0x0000026c   Zero   RW          284    .bss                co_pdo.o
+    0x08022370   0x00001db0   Zero   RW          299    .bss                co_queue.o
+    0x08024120   0x00000088   Zero   RW          314    .bss                co_sdoclient.o
+    0x080241a8   0x00000c8c   Zero   RW          336    .bss                co_sdoqueue.o
+    0x08024e34   0x00000024   Zero   RW          354    .bss                co_sdoserv.o
+    0x08024e58   0x00000018   Zero   RW          439    .bss                co_sync.o
+    0x08024e70   0x00000018   Zero   RW         1237    .bss                main.o
+    0x08024e88   0x000000b4   Zero   RW         1238    .bss                main.o
+    0x08024f3c   0x00000064   Zero   RW         1389    .bss                xsteer_402.o
+    0x08024fa0   0x0000a000   Zero   RW          906    .kernelHEAP         os_heap.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       280         12          0          8          0       2374   TMS570LS1224_AS5X47P_BSP.o
+      1348         20         48          0          0       5141   adc.o
+      2100         20          0          0          0      11370   as5x47p.o
+      2160         88         32          0          0       8496   can.o
+       448          4          0          1          0       5668   canopen_util.o
+       996         12         64          2       1248      14018   co_cobhandler.o
+       908         16         36         16          0      13144   co_commtask.o
+      1536         24          0         28          0       7594   co_emcy.o
+      2184         32          0         12         64       8328   co_errctrl.o
+       248          4          0          4          0       2519   co_event.o
+      1172          8          0         16          0       6988   co_nmt.o
+       724         16          0          8          0       4458   co_nmtmaster.o
+     11564         12          0        136          0      28076   co_odaccess.o
+      6132         36          0         28        620      22348   co_pdo.o
+      2044         16          0         16       7600       7631   co_queue.o
+      4232         20         56         20        136      16496   co_sdoclient.o
+      1456         20          0          4       3212       5320   co_sdoqueue.o
+      3852         24        208         16         36      13897   co_sdoserv.o
+       112          0          0          0          0       3556   co_stackinit.o
+         8          0          0          0          0        574   co_store.o
+      1148         28          0         24         24       4872   co_sync.o
+       852         12          0         16          0       4247   co_time.o
+       740          4          0         12          0       3835   co_timer.o
+       560         16          0         12          0      65874   codrv_cpu_tms570.o
+      1004          8          0          8          0       7389   codrv_dcan.o
+       396          4          0          6          0       2227   codrv_error.o
+       232         24          0          0          0        364   dabort.o
+       812          0          0          0          0      13801   esm.o
+       728         56       3142         58          0      15946   gen_objdict.o
+       660         60          0          0          0       3152   gio.o
+      1464        100         32        928          0       5889   het.o
+         8          0          0          0          0        639   logger.o
+      4120        112          0        160        204      31046   main.o
+         0          0          0          0          0       1444   math_helper.o
+      1580        136          0          0          0       4550   mibspi.o
+        44          0          0          0          0      30600   notification.o
+      1172          8        106          0          0       4643   nt_control.o
+      1108          0          0          0          0       9056   os_event_groups.o
+       760         20          0         24      40960       4060   os_heap.o
+       256          0          0          0          0       2198   os_list.o
+      2308          0          0          0          0      18603   os_mpu_wrappers.o
+       700         12          0          8          0       4792   os_port.o
+      1200         52          0          0          0        436   os_portasm.o
+      2852          0          0          0          0      11281   os_queue.o
+      7424         56          0        360          0      25849   os_tasks.o
+      1876         20          0         60          0       8687   os_timer.o
+      1740        208          0          0          0      27343   pinmux.o
+       836         76          0          0          0        556   sys_core.o
+        32          0          0          0          0        296   sys_intvecs.o
+         4          0          0          0          0        499   sys_phantom.o
+       224          0          0          0          0        356   sys_pmu.o
+      7600        300          0          0          0      15094   sys_selftest.o
+       556         28          0          0          0        863   sys_startup.o
+      1692        136        512          0          0       3651   sys_vim.o
+      1584         64          0          0          0       3385   system.o
+      1932         44         12         24        100       8473   xsteer_402.o
+
+    ----------------------------------------------------------------------
+     93708       1968       4284       2020     190396     533992   Object Totals
+         0          0         32          0     136192          0   (incl. Generated)
+         0          0          4          5          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+       224          4          0          0          0       1439   arm_mean_f32.o
+       208         20       1036          0          0       2054   arm_sin_f32.o
+        90          0          0          0          0          0   __dczerorl2.o
+         8          0          0          0          0         68   __main.o
+         0          0          0          0          0          0   __rtentry.o
+        12          0          0          0          0          0   __rtentry2.o
+         8          4          0          0          0          0   __rtentry6.o
+        52          8          0          0          0          0   __scatter.o
+        28          0          0          0          0          0   __scatter_zi.o
+        16          0          0          0          0         68   aeabi_memset.o
+        32          0          0          0          0        204   aeabi_sdiv_cr4_otime.o
+        18          0          0          0          0         80   exit.o
+         0          0          0          0          0          0   indicate_semi.o
+         2          0          0          0          0          0   libinit.o
+         6          0          0          0          0          0   libinit2.o
+         2          0          0          0          0          0   libshutdown.o
+         2          0          0          0          0          0   libshutdown2.o
+        84          0          0          0          0         76   memcmp.o
+        68          0          0          0          0         68   rt_memclr.o
+        78          0          0          0          0         80   rt_memclr_w.o
+       136          0          0          0          0         68   rt_memcpy_v6.o
+       100          0          0          0          0         80   rt_memcpy_w.o
+         2          0          0          0          0          0   rtexit.o
+        10          0          0          0          0          0   rtexit2.o
+        58          0          0          0          0         68   strlen.o
+        12          4          0          0          0         68   sys_exit.o
+         2          0          0          0          0         68   use_no_semi.o
+        10          0          0          0          0        116   fpinit.o
+
+    ----------------------------------------------------------------------
+      1276         40       1036          0          0       4605   Library Totals
+         8          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       432         24       1036          0          0       3493   arm_math_Cortex_R4_bspf.lib
+       826         16          0          0          0        996   c_2.b
+        10          0          0          0          0        116   fz_2v.b
+
+    ----------------------------------------------------------------------
+      1276         40       1036          0          0       4605   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     94984       2008       5320       2020     190396     524577   Grand Totals
+     94984       2008       5320        416     190396     524577   ELF Image Totals (compressed)
+     94984       2008       5320        416          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)               100304 (  97.95kB)
+    Total RW  Size (RW Data + ZI Data)            192416 ( 187.91kB)
+    Total ROM Size (Code + RO Data + RW Data)     100720 (  98.36kB)
+
+==============================================================================
+
+Finished building target: aerosteering.axf
+ 
+
+13:54:46 Build Finished (took 269ms)
+
