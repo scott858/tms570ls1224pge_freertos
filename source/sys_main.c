@@ -50,6 +50,9 @@
 #include "sys_common.h"
 
 /* USER CODE BEGIN (1) */
+#include "FreeRTOS.h"
+#include "FreeRTOSConfig.h"
+#include "os_task.h"
 /* USER CODE END */
 
 /** @fn void main(void)
@@ -66,6 +69,13 @@
 int main(void)
 {
 /* USER CODE BEGIN (3) */
+
+for(;;)
+{
+
+	vTaskDelay(100);
+
+}
 /* USER CODE END */
 
     return 0;
